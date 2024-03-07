@@ -1,5 +1,7 @@
 #!/usr/bin/python3
+"""pascal triangle"""
 #Author:MikiasHailu
+
 def pascal_triangle(n):
     """returns a list of lists of numbers
     representing the pascal triangle"""
