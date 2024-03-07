@@ -1,25 +1,26 @@
 #!/usr/bin/python3
-"""Pascal Triangle Interview Challenge"""
+#Author: MikiasHailu
+"""Pascal Triangle"""
 
 
 def pascal_triangle(n):
-    """returns a list of lists of numbers
-    representing the pascal triangle"""
+    """this is a pascal trinagle 
+    represent with n sides"""
     if n <= 0:
         return []
 
     pascal_t = []
 
-    for i in range(n):
+    for m in range(n):
         pascal_t.append([])
-        pascal_t[i].append(1)
+        pascal_t[m].append(1)
 
-        for j in range(1, i):
-            x = pascal_t[i-1][j-1]
-            y = pascal_t[i-1][j]
-            pascal_t[i].append(x+y)
+        for j in range(1, m):
+            x = pascal_t[m-1][j-1]
+            y = pascal_t[m-1][j]
+            pascal_t[m].append(x+y)
 
-        if(n != 0 and i != 0):
-            pascal_t[i].append(1)
+        if(n != 0 and m != 0):
+            pascal_t[m].append(1)
 
     return pascal_t
