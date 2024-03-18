@@ -2,7 +2,6 @@
 # Author: MikiasHailu
 """alx interveiw minimum oper"""
 
-
 def primeFactorization(x):
 	""" This function will return  prime factorization of x"""
 	div = 2
