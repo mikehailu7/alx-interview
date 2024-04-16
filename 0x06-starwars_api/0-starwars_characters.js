@@ -1,5 +1,6 @@
 #!/usr/bin/node
-//Author: Mikias Hailu 
+//Author: MikiasHailu 
+//Project:star wars api 
 
 const request = require('request');
 
